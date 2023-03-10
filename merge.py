@@ -1,9 +1,5 @@
 # import pypdf
 from PyPDF2 import PdfReader, PdfWriter
-
-# import os
-import os
-
 # import sys
 import sys
 
@@ -12,6 +8,8 @@ def merger(pdf1, pdf2):
     # read pdf1
     pdf1File = open(pdf1, 'rb')
     pdf1Reader = PdfReader(pdf1File)
+
+    
     # get all pages from pdf1
     pages = len(pdf1Reader.pages)
     pages_list = []

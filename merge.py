@@ -9,7 +9,7 @@ def merger(pdf1, pdf2):
     pdf1File = open(pdf1, 'rb')
     pdf1Reader = PdfReader(pdf1File)
 
-    
+
     # get all pages from pdf1
     pages = len(pdf1Reader.pages)
     pages_list = []
@@ -34,7 +34,7 @@ def merger(pdf1, pdf2):
         pdfWriter.add_page(page)
     
     # write to a new pdf file
-    pdfOutputFile = open('merged.pdf', 'wb')
+    pdfOutputFile = open(str(input('Enter the name of the output file: ')) + '.pdf', 'wb')
     pdfWriter.write(pdfOutputFile)
     pdfOutputFile.close()
     pdf1File.close()

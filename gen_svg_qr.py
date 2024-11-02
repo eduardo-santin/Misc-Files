@@ -12,3 +12,5 @@ def create_qr(url, file_name):
 
 if __name__ == '__main__':
     create_qr(sys.argv[1], sys.argv[2])
+
+
